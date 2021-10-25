@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Employee List</title>
+    <link rel="stylesheet" href="styles/employees.css">
+
+</head>
+<body>
+	<h1>The Employee Management Application</h1>
+	<h2>Add Employee</h2>
+	<form id="form">
+		
+			<p>Name:</p>
+
+			<input type="text" name="name" id="employeName">
+			
+            <br>
+
+		    <p>Title:</p>
+			<input type="text" name="title" id="employeTitle">
+			
+            <br>
+
+		    <p>Extension:</p>
+			<input type="number" name="extension" id="employeEx">
+			
+            <br>
+
+		    <button id="btn" type="button" class="add_employee">Add</button>
+	</form>
+    <p>
+        <strong>Showing <span id="EmployeeCount"></span> employees</strong>
+    </p>
+    <table border="1">
+	<thead>
+		<tr>
+				<td>Name</td>
+				<td>Title</td>
+				<td>Extension</td>
+				<td></td>
+		</tr>
+	</thead>
+		<tbody id="tblBody">
+		</tbody>
+	</table>
+    <script src="js/employee-management.js"></script>
+</body>
+</html>
